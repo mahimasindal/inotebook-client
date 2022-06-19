@@ -1,0 +1,225 @@
+/* * {
+    background-color: #f1e1f3;
+    color: #4d306b;
+} */
+
+
+
+:root{
+    font-size: 62.5%;
+    --clr-primary-light:#f1e1f3;
+    --clr-primary-dark:#957dad;
+    --clr-secondary-dirty:#e5d3e7;
+    --clr-font-dark:black;
+    --clr-font-light:white;
+    --ff-primary: "Barlow Semi Condensed", sans-serif;
+}
+* {
+    font-family: var(--ff-primary)/*  'Balsamiq Sans', cursive */;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+.mostOuterContainer {
+    background-color: var(--clr-primary-light);
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+
+/*Navbar*/
+.navbar{
+    font-size: 1.6rem;
+    padding: 0.5em;
+}
+
+.vertical-align {
+    line-height: 2.3;
+    padding-right: 0.5rem;
+}
+
+.navbar-customclass {
+    background-color: var(--clr-primary-dark);
+    color: var(--clr-font-light);
+    /* border: 2px black solid; */
+}
+
+.navbar-collapse {
+    margin-left: 2.5rem
+}
+
+.navbar-brand img {
+    height: 3.2em;
+}
+
+.arrow {
+    color: rgba(255, 255, 255, .55);
+   font-size: 2.5rem;
+}
+
+.arrow:hover {
+    color: var(--clr-font-light);
+}
+
+.navbar-dark .navbar-nav .nav-link.active{
+    text-underline-offset: var(--clr-primary-light);
+}
+.user{
+    justify-content:left;
+    margin-left: 0;
+}
+
+/*Alert*/
+.alert{
+    display:flex;
+    align-items: center;
+    padding: 1em;
+    font-size: 1.6rem;
+    height:50px;
+}
+.alert-outer{
+    height:50px;
+}
+
+
+/*Add Notes*/
+
+.addNoteCard {
+    /*also used for login signup*/
+    /* border: 2px black solid;*/
+    border-radius: 15px;
+    background-color: var(--clr-primary-dark) /* #a493b6 */;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: var(--clr-font-light);
+    padding: 1em;
+    margin-top: 25px;
+    font-size:1.6rem;
+}
+
+.plus-float {
+    position: fixed;
+    font-size: 4rem;
+    bottom: 20px;
+    right: 20px;
+    color:  var(--clr-primary-dark);
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    margin-top: 22px;
+}
+
+.plus-float:hover {
+    transition-duration: 500ms;
+    color: var(--clr-secondary-dirty)/* #875bb3 */;
+    box-shadow: 3px 3px 4px rgb(119, 119, 119);
+    background-color: var(--clr-primary-dark);
+}
+
+
+/*Buttons*/
+
+.btn1 {
+    font-size: 1.6rem;
+    background-color:  var(--clr-primary-dark);
+    border-color:  var(--clr-primary-light);
+    color:  var(--clr-primary-light);
+}
+
+.btn1:hover {
+   
+    background-color:  var(--clr-primary-light);
+    color:  var(--clr-primary-dark);
+}
+
+.btn2 {
+    font-size: 1.6rem;
+    color: var(--clr-primary-light);
+}
+
+.btn2:hover {
+    background-color:  var(--clr-primary-dark);
+    border-color:  var(--clr-primary-light);
+    border-style: dashed;
+    color:  var(--clr-primary-light);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* pastel yellow-#FDFD96; 
+lavendar rgb(151, 151, 165)
+lightish blue-#DCFFFB
+pastel- pink*/
+
+
+/*Notes Layout*/
+
+.notes-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    /* row-gap column gap */
+}
+
+.note-item {
+    font-size: 1.4rem;
+    position: relative;
+    /*height: 20vh;*/
+    flex-grow: 1;
+    border: 1px var(--clr-secondary-dirty) solid;
+    border-radius: 15px;
+    background-color: var(--clr-secondary-dirty);
+    /* background-color: var(--clr-primary-light); */
+    overflow: hidden;
+    padding: 0.8em;
+}
+
+.note-item:hover {
+    transition-duration: 500ms;
+    border: 1px #a493b6 solid;
+    
+}
+
+.note-item-inner {
+    font-size: 1.4rem;
+    max-height: 20vh;
+    color: var(--clr-font-dark);
+    text-decoration: none;
+    font-family: 'Balsamiq Sans', cursive;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+}
+.note-item-inner>h4{
+    font-size: 1.6rem;
+}
+.card-text {
+    overflow: hidden;
+    white-space: nowrap;
+    /* Don't forget this one */
+    text-overflow: ellipsis;
+}
+
+.little-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color:  var(--clr-primary-dark);
+    font-size: 1.2rem;
+    margin-right: 4px;
+}
+
+.little-icons:hover {
+    /* color: #8b69ad; */
+    transition-duration: 500ms;
+    transform-style: preserve-3d;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.form-control{
+    font-size: 1.6rem;
+}
